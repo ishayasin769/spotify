@@ -1,0 +1,23 @@
+{
+  "name": "spotify",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Isha-Yasin886/spotify#readme",
+  "bugs": {
+    "url": "https://github.com/Isha-Yasin886/spotify/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isha-Yasin886/spotify.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

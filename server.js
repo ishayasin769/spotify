@@ -1,6 +1,12 @@
-const express = require('express');
+require('dotenv').config();
+const app = require('./src/app');
+const connectDB = require('./src/db/db');
 
-const app = express();
+connectDB();
+
+app.listen(3000, () => {
+    console.log('App listening on port 3000!');
+});
 
 
 

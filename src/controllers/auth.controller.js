@@ -25,7 +25,7 @@ async function registerUser(req, res) {
    const token = jwt.sign(
      { id: newUser._id, role: newUser.role },
      process.env.JWT_SECRET,
-     { expiresIn: "1h" },
+     { expiresIn: "1d" },
    );
 
    res.cookie("token", token);
@@ -39,8 +39,7 @@ async function registerUser(req, res) {
        email: newUser.email,
        role: newUser.role,
      },
-   });
-
+   }) 
     
 }
 
@@ -63,7 +62,7 @@ async function loginUser(req, res) {
     }
 
     const token = jwt.sign({ id: user._id, role : user.role }, process.env.JWT_SECRET,
-         { expiresIn: '1h' });
+         { expiresIn: '1d' });
     res.cookie('token',token);
 
     res.status(200).json({ message: 'User logged in successfully',
